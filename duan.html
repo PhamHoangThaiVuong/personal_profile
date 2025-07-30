@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Dự Án Nổi Bật</title>
+  <link rel="stylesheet" href="duan.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <img src="C:\Users\VUONG\Downloads\profile\meo1.jpg" alt="Portfolio">
+        <p class="badge badge-designer"> User Profile Card</p>
+        <p class="card-title">thẻ thông tin cá nhân</p>
+        <a href="https://phamhoangthaivuong.github.io/vuongpham/" target="_blank">
+          <button class="card-button">&#10148;</button>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="C:\Users\VUONG\Downloads\profile\meo2.jpg" alt="Developer">
+        <p class="badge badge-developer">Calculator_web</p>
+        <p class="card-title">Web máy tính cầm tay</p>
+        <a href="https://phamhoangthaivuong.github.io/calculator_web/" target="_blank">
+          <button class="card-button">&#10148;</button>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="images/marketer.jpg" alt="Marketer">
+        <p class="badge badge-marketer">Sidebar Menu with Mini Apps</p>
+        <p class="card-title">Menu cac apps và trò chơi</p>
+        <a href="https://phamhoangthaivuong.github.io/Bai-7/" target="_blank">
+          <button class="card-button">&#10148;</button>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Nút chuyển -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Dấu chấm -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.mySwiper', {
+      loop: true,
+      spaceBetween: 30,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      }
+    });
+  </script>
+</body>
+</html>
